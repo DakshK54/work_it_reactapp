@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 
 app.use(express.json());
 
-const mongourl = "mongodb+srv://VaginaMonkeys:<password>@workit-userinfo.pq4uqf0.mongodb.net/?retryWrites=true&w=majority";
+const mongourl = "mongodb+srv://VaginaMonkeys:password@workit-userinfo.pq4uqf0.mongodb.net/?retryWrites=true&w=majority";
 
 mongoose.connect(mongourl,{ useNewUrlParser:true}).then(()=>{console.log("Connected to database");}).catch(e=>console.log(e))
 
